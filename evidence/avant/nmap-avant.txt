@@ -1,0 +1,2 @@
+# Nmap 7.98 scan initiated Mon Oct  5 20:16:16 2026 as: nmap -sV -p- -oN /home/eya/nmap-avant.txt 192.168.127.135
+# Nmap done at Mon Oct  5 20:16:16 2026 -- 1 IP address (0 hosts up) scanned in 0.32 seconds
