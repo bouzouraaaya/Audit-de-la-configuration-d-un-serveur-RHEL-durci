@@ -14,3 +14,5 @@
 | Vague 2B : faillock (4 règles) | 157 | 43 | 78,5 % |
 
 - faillock : deny=3, fail_interval=900, unlock_time=900, even_deny_root.
+
+| Vague 3A : SSH, sudo use_pty, audit sudo (4 règles) | 161 | 39 | 80,5 % |
