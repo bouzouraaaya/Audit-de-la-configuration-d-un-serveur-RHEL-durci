@@ -18,3 +18,5 @@
 | Vague 3A : SSH, sudo use_pty, audit sudo (4 règles) | 161 | 39 | 80,5 % |
 
 | Vague 4 : AIDE, dnf-automatic, root console (8 règles) | 169 | 31 | 84,5 % |
+
+| Vague 5 : options noyau GRUB (11 règles) | PASS | FAIL | CONFORMITÉ |
