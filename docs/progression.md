@@ -10,3 +10,7 @@
 - Après la vague 2A, deux règles d'ownership (`home_files_ownership`, `home_files_groupownership`) sont passées de PASS à FAIL, corrigées par `chown`.
 - `home_files_permissions` échouait à cause de `gvfs-metadata` (interface graphique GNOME), recréé en mode 644. Un serveur sans GUI évite ce problème.
 - `ip_forward = 0` appliqué : la VM n'est pas un routeur.
+
+| Vague 2B : faillock (4 règles) | 157 | 43 | 78,5 % |
+
+- faillock : deny=3, fail_interval=900, unlock_time=900, even_deny_root.
