@@ -20,3 +20,4 @@
 | Vague 4 : AIDE, dnf-automatic, root console (8 règles) | 169 | 31 | 84,5 % |
 
 | Vague 5 : options noyau GRUB (11 règles) | PASS | FAIL | CONFORMITÉ |
+| Après correction SSH-03 et SSH-04 | 15 | 1 | 93,8 % | 93,5 % |
