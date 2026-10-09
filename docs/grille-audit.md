@@ -11,3 +11,18 @@ Cible : RHEL 9.8 (VM VMware). Profil OpenSCAP : ANSSI-BP-028 intermediary. Class
 | G-05 | Système à jour via le canal officiel ? | 33 mises à jour en attente, aucune de sécurité. dnf-automatic applique les correctifs de sécurité | Conforme, avec observation (33 mises à jour hors sécurité) | EV-005 |
 | G-06 | Paramètres noyau appliqués ? | 52 règles sysctl corrigées. 11 options GRUB actives sur le noyau 5.14.0-687.56.1 | Conforme (valeurs sysctl à confirmer avec EV-006-sysctl.txt) | EV-006 |
 | G-07 | Écarts priorisés selon un critère explicite ? | Critère impact / effort : 3 en P1, 9 en P2, 8 en P3 | Conforme | EV-007 |
+
+## Compléments (preuves vérifiées)
+- G-06 : EV-006-sysctl.txt confirme net.ipv4.conf.all.rp_filter = 1 et kernel.randomize_va_space = 2. Lynis (KRNL-6000) signale que d'autres valeurs sysctl diffèrent de son propre profil : observation.
+- G-02 : Lynis confirme OpenSCAP sur les partitions séparées (FILE-6310) et l'expiration des mots de passe (AUTH-9286). Il complète sur des points hors profil ANSSI : bannières légales, protocoles rares (dccp, rds, sctp, tipc), USB et FireWire, compilateurs, antivirus, journalisation externe, sysstat, options SSH supplémentaires (SSH-7408). Aucun écart majeur de Lynis n'est absent d'OpenSCAP sans explication.
+- Lynis : 37 suggestions au total, 30 lignes distinctes (SSH-7408 apparaît 8 fois).
+
+## Compléments (preuves vérifiées)
+- G-06 : EV-006-sysctl.txt confirme net.ipv4.conf.all.rp_filter = 1 et kernel.randomize_va_space = 2. Lynis (KRNL-6000) signale que d'autres valeurs sysctl diffèrent de son propre profil : observation.
+- G-02 : Lynis confirme OpenSCAP sur les partitions séparées (FILE-6310) et l'expiration des mots de passe (AUTH-9286). Il complète sur des points hors profil ANSSI : bannières légales, protocoles rares (dccp, rds, sctp, tipc), USB et FireWire, compilateurs, antivirus, journalisation externe, sysstat, options SSH supplémentaires (SSH-7408). Aucun écart majeur de Lynis n'est absent d'OpenSCAP sans explication.
+- Lynis : 37 suggestions au total, 30 lignes distinctes (SSH-7408 apparaît 8 fois).
+
+## Compléments (preuves vérifiées)
+- G-06 : EV-006-sysctl.txt confirme net.ipv4.conf.all.rp_filter = 1 et kernel.randomize_va_space = 2. Lynis (KRNL-6000) signale que d'autres valeurs sysctl diffèrent de son propre profil : observation.
+- G-02 : Lynis confirme OpenSCAP sur les partitions séparées (FILE-6310) et l'expiration des mots de passe (AUTH-9286). Il complète sur des points hors profil ANSSI : bannières légales, protocoles rares (dccp, rds, sctp, tipc), USB et FireWire, compilateurs, antivirus, journalisation externe, sysstat, options SSH supplémentaires (SSH-7408). Aucun écart majeur de Lynis n'est absent d'OpenSCAP sans explication.
+- Lynis : 37 suggestions au total, 30 lignes distinctes (SSH-7408 apparaît 8 fois).
