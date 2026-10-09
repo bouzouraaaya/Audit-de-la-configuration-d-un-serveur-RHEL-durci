@@ -1,0 +1,9 @@
+ID,Controle,Criticite,Statut,Detail
+SSH-01,Connexion root SSH désactivée,Critique,PASS,permitrootlogin=no
+SSH-02,Authentification par mot de passe désactivée,Élevée,FAIL,passwordauthentication=yes
+SSH-03,Tentatives d'authentification limitées (<=4),Moyenne,FAIL,maxauthtries=6
+SSH-04,Redirection X11 désactivée,Faible,FAIL,x11forwarding=yes
+FW-01,firewalld actif,Élevée,PASS,active
+SEL-01,SELinux en mode enforcing,Critique,PASS,getenforce=Enforcing
+AUD-01,auditd actif,Élevée,PASS,active
+SVC-01,sshd actif,Faible,PASS,active
