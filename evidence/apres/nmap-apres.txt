@@ -1,0 +1,10 @@
+# Nmap 7.98 scan initiated Fri Oct  9 20:44:30 2026 as: nmap -Pn -sV -p- -T4 --max-retries 1 -oN /home/eya/nmap-apres.txt 192.168.127.135
+Nmap scan report for 192.168.127.135
+Host is up (0.00068s latency).
+Not shown: 65394 filtered tcp ports (no-response), 140 filtered tcp ports (admin-prohibited)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 9.9 (protocol 2.0)
+MAC Address: 00:0C:29:F8:A1:BC (VMware)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Oct  9 20:46:46 2026 -- 1 IP address (1 host up) scanned in 136.51 seconds

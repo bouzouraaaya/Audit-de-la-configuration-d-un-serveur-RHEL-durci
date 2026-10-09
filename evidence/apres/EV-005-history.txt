@@ -1,0 +1,10 @@
+Utilisateur non « root », les référentiels de gestion des abonnement ne sont pas mis à jour
+ID     | Ligne de commande                        | Date et heure    | Action(s)      | Modifié
+-----------------------------------------------------------------------------------------------
+    10 |                                          | 2026-10-09 10:28 | I, U           |   23   
+     9 | install -y dnf-automatic                 | 2026-10-08 23:24 | Install        |    1   
+     8 | install -y aide                          | 2026-10-08 23:21 | Install        |    1   
+     7 | remove -y nmap                           | 2026-10-05 19:50 | Removed        |    1   
+     6 | install -y nmap                          | 2026-10-05 19:47 | Install        |    1   
+     5 | update                                   | 2026-10-05 19:46 | Upgrade        |    1   
+     4 | install -y lynis                         | 2026-10-05 15:02 | Install        |    1  <

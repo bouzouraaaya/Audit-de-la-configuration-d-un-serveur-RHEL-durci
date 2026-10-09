@@ -1,0 +1,39 @@
+Utilisateur non « root », les référentiels de gestion des abonnement ne sont pas mis à jour
+Extra Packages for Enterprise Linux 9 - x86_64  1.8 MB/s |  20 MB     00:10    
+Extra Packages for Enterprise Linux 9 openh264  1.1 kB/s | 2.5 kB     00:02    
+Red Hat Enterprise Linux 9 for x86_64 - BaseOS  3.0 MB/s | 156 MB     00:52    
+Red Hat Enterprise Linux 9 for x86_64 - AppStre 2.6 MB/s | 114 MB     00:43    
+
+gnutls.x86_64                   3.8.10-9.el9_8              rhel-9-for-x86_64-baseos-rpms   
+insights-core.noarch            3.8.2-1.el9_8               rhel-9-for-x86_64-appstream-rpms
+insights-core-selinux.noarch    3.8.2-1.el9_8               rhel-9-for-x86_64-appstream-rpms
+iwl100-firmware.noarch          39.31.5.1-161.3.el9_8       rhel-9-for-x86_64-baseos-rpms   
+iwl1000-firmware.noarch         1:39.31.5.1-161.3.el9_8     rhel-9-for-x86_64-baseos-rpms   
+iwl105-firmware.noarch          18.168.6.1-161.3.el9_8      rhel-9-for-x86_64-baseos-rpms   
+iwl135-firmware.noarch          18.168.6.1-161.3.el9_8      rhel-9-for-x86_64-baseos-rpms   
+iwl2000-firmware.noarch         18.168.6.1-161.3.el9_8      rhel-9-for-x86_64-baseos-rpms   
+iwl2030-firmware.noarch         18.168.6.1-161.3.el9_8      rhel-9-for-x86_64-baseos-rpms   
+iwl3160-firmware.noarch         1:25.30.13.0-161.3.el9_8    rhel-9-for-x86_64-baseos-rpms   
+iwl5000-firmware.noarch         8.83.5.1_1-161.3.el9_8      rhel-9-for-x86_64-baseos-rpms   
+iwl5150-firmware.noarch         8.24.2.2-161.3.el9_8        rhel-9-for-x86_64-baseos-rpms   
+iwl6000g2a-firmware.noarch      18.168.6.1-161.3.el9_8      rhel-9-for-x86_64-baseos-rpms   
+iwl6000g2b-firmware.noarch      18.168.6.1-161.3.el9_8      rhel-9-for-x86_64-baseos-rpms   
+iwl6050-firmware.noarch         41.28.5.1-161.3.el9_8       rhel-9-for-x86_64-baseos-rpms   
+iwl7260-firmware.noarch         1:25.30.13.0-161.3.el9_8    rhel-9-for-x86_64-baseos-rpms   
+libbrotli.x86_64                1.0.9-10.el9_8              rhel-9-for-x86_64-baseos-rpms   
+libertas-sd8787-firmware.noarch 20260827-161.3.el9_8        rhel-9-for-x86_64-baseos-rpms   
+libldb.x86_64                   4.23.5-12.el9_8             rhel-9-for-x86_64-baseos-rpms   
+libsmbclient.x86_64             4.23.5-12.el9_8             rhel-9-for-x86_64-baseos-rpms   
+libwbclient.x86_64              4.23.5-12.el9_8             rhel-9-for-x86_64-baseos-rpms   
+linux-firmware.noarch           20260827-161.3.el9_8        rhel-9-for-x86_64-baseos-rpms   
+linux-firmware-whence.noarch    20260827-161.3.el9_8        rhel-9-for-x86_64-baseos-rpms   
+mdadm.x86_64                    4.4-4.el9_8.2               rhel-9-for-x86_64-baseos-rpms   
+netronome-firmware.noarch       20260827-161.3.el9_8        rhel-9-for-x86_64-baseos-rpms   
+passt.x86_64                    0^20251210.gd04c480-7.el9_8 rhel-9-for-x86_64-appstream-rpms
+passt-selinux.noarch            0^20251210.gd04c480-7.el9_8 rhel-9-for-x86_64-appstream-rpms
+samba-client-libs.x86_64        4.23.5-12.el9_8             rhel-9-for-x86_64-baseos-rpms   
+samba-common.noarch             4.23.5-12.el9_8             rhel-9-for-x86_64-baseos-rpms   
+samba-common-libs.x86_64        4.23.5-12.el9_8             rhel-9-for-x86_64-baseos-rpms   
+selinux-policy.noarch           38.1.75-2.el9_8.1           rhel-9-for-x86_64-baseos-rpms   
+selinux-policy-targeted.noarch  38.1.75-2.el9_8.1           rhel-9-for-x86_64-baseos-rpms   
+tzdata.noarch                   2026e-1.el9_8               rhel-9-for-x86_64-baseos-rpms   

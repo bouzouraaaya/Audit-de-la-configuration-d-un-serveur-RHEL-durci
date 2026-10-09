@@ -1,0 +1,2 @@
+Utilisateur non « root », les référentiels de gestion des abonnement ne sont pas mis à jour
+Dernière vérification de l’expiration des métadonnées effectuée il y a 0:09:51 le ven. 09 oct. 2026 21:10:48.
