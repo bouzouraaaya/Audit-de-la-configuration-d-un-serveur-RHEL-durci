@@ -21,3 +21,4 @@
 
 | Vague 5 : options noyau GRUB (11 règles) | PASS | FAIL | CONFORMITÉ |
 | Après correction SSH-03 et SSH-04 | 15 | 1 | 93,8 % | 93,5 % |
+| Après correction SSH-02 (clé SSH, mot de passe désactivé) | 16 | 0 | 100 % | 100 % |
