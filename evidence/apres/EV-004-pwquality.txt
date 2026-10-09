@@ -1,0 +1,7 @@
+dcredit = -1
+lcredit = -1
+minclass = 4
+minlen = 15
+ocredit = -1
+retry = 3
+ucredit = -1

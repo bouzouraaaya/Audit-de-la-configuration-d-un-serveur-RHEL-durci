@@ -1,0 +1,4 @@
+deny = 3
+even_deny_root
+fail_interval = 900
+unlock_time = 900
