@@ -1,57 +1,28 @@
-# Audit automatisé de la configuration et de la conformité de sécurité d'un serveur RHEL durci
+# Audit de la configuration d'un serveur RHEL durci
+Cahier des charges n° 13, classe 2, sujet 1. Cible : RHEL 9.8 (VM VMware, laboratoire isolé).
 
-## 1. Contexte
-Un serveur Linux installé par défaut n'est pas sécurisé de façon optimale.
-Le durcissement réduit la surface d'attaque, mais il faut pouvoir vérifier
-qu'il est réellement appliqué et qu'il le reste dans le temps.
+## Problématique
+Un serveur RHEL durci respecte-t-il les critères A.8.9 et A.8.19 et un profil de durcissement ? Quels écarts restent, et dans quel ordre les traiter ?
 
-## 2. Problématique
-Comment vérifier automatiquement qu'un serveur RHEL durci respecte les
-bonnes pratiques de sécurité, et identifier les écarts et mauvaises
-configurations restantes ?
+## Référentiels
+- Cahier des charges : A.8.9, A.8.19 et référentiel CIS RHEL.
+- Profil scanné : ANSSI-BP-028 intermediary (référentiel français couvert par scap-security-guide). Le résultat d'un scan CIS niveau 1, s'il a été exécuté, figure dans docs/scores-openscap.md.
+- A.8.9 et A.8.19 sont des reformulations d'aide à l'audit, à confirmer avec la norme.
 
-## 3. Objectifs
-- Mettre en place un serveur RHEL 9 de laboratoire.
-- Réaliser un audit initial (état « avant »).
-- Appliquer un durcissement documenté et reproductible.
-- Réaliser un audit final (état « après ») avec les mêmes outils.
-- Comparer les résultats, analyser les écarts restants et proposer
-  des recommandations.
+## Outils
+OpenSCAP, Lynis, scripts Bash (audit.sh, 16 contrôles, score pondéré), nmap (depuis une seconde VM), Git. Ansible n'a pas été utilisé : la remédiation a été appliquée avec oscap --remediate, règle par règle.
 
-## 4. Périmètre
-- Inclus : 1 serveur RHEL 9 (VM), configuration système, SSH, pare-feu,
-  SELinux, comptes, journalisation, services, noyau, réseau.
-- Exclus : applications métier, tests d'intrusion applicatifs,
-  sécurité physique, infrastructure réseau externe.
+## Contenu
+- docs/programme-audit.md : programme et plan d'audit
+- docs/grille-audit.md, docs/matrice.md : grille et matrice
+- docs/constats.md, docs/plan-actions.md, docs/EV-007-ecarts-priorises.md
+- docs/rapport.md, docs/presentation-5min.md, docs/guides.md, docs/scenarios.md
+- docs/index-preuves.md, docs/scores-openscap.md, docs/inventaire.md, docs/revue-documentaire.md, docs/entretien-cloture.md
+- docs/correspondance-dossier-cdc.md : lien avec l'arborescence du cahier des charges
+- evidence/avant, evidence/apres : preuves brutes. reports/ : sorties du script. checks/ : contrôles.
 
-## 5. Référentiels
-- Principal : ANSSI-BP-028 (niveau intermediary).
-- Comparaison (optionnel) : CIS Level 1.
-- Justification : [à compléter : référentiel français, couvert par
-  OpenSCAP / scap-security-guide, adapté à un serveur GNU/Linux]
+## Résultats clés
+OpenSCAP : 87 puis 180 règles conformes sur 200 évaluées. Lynis : 67 puis 71. Un seul port TCP exposé (22).
 
-## 6. Outils
-| Outil | Rôle |
-|---|---|
-| OpenSCAP | Audit de conformité par rapport au référentiel |
-| Lynis | Seconde analyse indépendante |
-| Scripts Bash | Contrôles personnalisés, rapport CSV/HTML |
-| Nmap | Mesure de la surface d'attaque depuis l'extérieur |
-| Ansible | Durcissement reproductible |
-| Git | Traçabilité et preuves |
-
-## 7. Méthodologie
-Préparation → Audit initial → Analyse → Durcissement → Audit final
-→ Comparaison → Recommandations
-
-## 8. Méthode de scoring
-- Statuts : PASS, FAIL, N/A, MANUEL
-- Criticité : Critique (x4), Élevée (x3), Moyenne (x2), Faible (x1)
-- Score = somme des poids des PASS / somme des poids des contrôles applicables
-
-## 9. Livrables
-- Rapport d'audit (avant / après / comparaison)
-- Dépôt Git (scripts, playbooks, preuves)
-- Démonstration en direct
-
-
+## Limites
+Voir docs/rapport.md, sections 10 et 10 bis.

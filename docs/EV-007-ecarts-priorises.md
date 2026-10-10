@@ -24,3 +24,16 @@ Les notes sont un jugement d'auditeur, à valider avec l'enseignant.
 | P3 | postfix_client_configure_mail_alias | 1 | 1 | Non pertinent (aucun serveur mail) |
 
 Total : 20 écarts (3 en P1, 9 en P2, 8 en P3).
+
+## Consolidation Lynis (source : evidence/apres/lynis-suggestions.txt, 30 suggestions distinctes)
+| Priorité | Thème | Codes Lynis | Lien OpenSCAP |
+|---|---|---|---|
+| P1 | Expiration et umask des mots de passe | AUTH-9282, AUTH-9286, AUTH-9328 | PASS_MAX_DAYS = 99999 (AC-02) |
+| P1 | Bannières légales | BANN-7126, BANN-7130 | Hors profil ANSSI |
+| P2 | Options SSH supplémentaires | SSH-7408 (8 occurrences) | Hors profil |
+| P2 | Protocoles rares (dccp, rds, sctp, tipc) | NETW-3200 | Hors profil |
+| P2 | Partitions séparées | FILE-6310 | partition_for_* (confirme OpenSCAP) |
+| P2 | Services, core dumps, sysctl | BOOT-5264, KRNL-5820, KRNL-6000 | Partiel |
+| P3 | USB et FireWire, compilateurs, antivirus | USB-1000, STRG-1846, HRDN-7222, HRDN-7230 | Hors périmètre labo |
+| P3 | DNS, journalisation externe, outils | NETW-2705, NAME-4406, LOGG-2154, LOGG-2190, TOOL-5002, ACCT-9626, AUTH-9229, AUTH-9288, FILE-7524 | Environnement de labo |
+Priorités proposées par l'auditeur selon le critère impact / effort.

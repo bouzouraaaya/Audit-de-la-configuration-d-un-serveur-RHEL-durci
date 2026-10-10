@@ -39,7 +39,7 @@ Laboratoire isolé, snapshots avant chaque vague de modification, données ficti
 
 ## 11. Limites connues
 - Le scan nmap initial est invalide (0 hôte détecté, option -Pn absente). L'état initial des ports s'appuie sur ss et firewall-cmd (evidence/avant/).
-- L'installation contient une interface graphique, malgré le choix « Serveurs ».
+- L'installation contient une interface graphique (service gdm actif).
 - Le système a évolué entre les mesures : dnf-automatic a installé un nouveau noyau (687.54.1 puis 687.56.1) et mis à jour openssl et glibc.
 - Les rapports du script d'audit ont temporairement dégradé trois règles OpenSCAP (droits des fichiers). Corrigé dans audit.sh.
 - Profil ANSSI scanné à la place du CIS : à valider.
