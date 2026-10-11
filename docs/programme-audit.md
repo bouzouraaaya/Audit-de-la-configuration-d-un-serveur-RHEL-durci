@@ -43,3 +43,20 @@ Laboratoire isolé, snapshots avant chaque vague de modification, données ficti
 - Le système a évolué entre les mesures : dnf-automatic a installé un nouveau noyau (687.54.1 puis 687.56.1) et mis à jour openssl et glibc.
 - Les rapports du script d'audit ont temporairement dégradé trois règles OpenSCAP (droits des fichiers). Corrigé dans audit.sh.
 - Profil ANSSI scanné à la place du CIS : à valider.
+
+## 2 bis. Justification du périmètre et hors-périmètre proposé
+Proposition de l'auditeur, à valider par l'enseignant.
+
+### Justification
+Le périmètre se limite à un serveur RHEL 9.8, car le sujet est l'audit de la configuration d'un serveur RHEL durci. Il couvre les six domaines du cahier des charges (section 5.1) : services, comptes, pare-feu local, mises à jour, paramètres noyau et politique de mots de passe. Ces domaines correspondent aux sept questions d'audit de la section 3. L'environnement est un laboratoire isolé, sans donnée métier réelle.
+
+### Hors périmètre proposé
+- Applications et données métier (aucune n'est installée).
+- Infrastructure externe : hyperviseur VMware, réseau du poste hôte, pare-feu périmétrique.
+- Sécurité physique.
+- La VM Ubuntu : elle sert uniquement de poste de scan réseau (nmap) et n'est pas auditée.
+- Les conteneurs (Docker, Docker Compose) : le cahier des charges les cite pour le module, mais ils ne sont pas utilisés ici.
+- La remédiation : le durcissement a servi à préparer la cible. Le cahier des charges la place hors du périmètre de l'audit proprement dit.
+- Les tests d'intrusion et l'exploitation de vulnérabilités.
+
+L'enseignant doit confirmer ou corriger cette liste. La ligne « Hors périmètre » de la section 2 reste marquée [À PRÉCISER PAR L'ENSEIGNANT] tant qu'il n'a pas répondu.
