@@ -6,7 +6,7 @@ Un serveur RHEL durci respecte-t-il les critères A.8.9 et A.8.19 et un profil d
 
 ## Référentiels
 - Cahier des charges : A.8.9, A.8.19 et référentiel CIS RHEL.
-- Profil scanné : ANSSI-BP-028 intermediary (référentiel français couvert par scap-security-guide). Le résultat d'un scan CIS niveau 1, s'il a été exécuté, figure dans docs/scores-openscap.md.
+- Profil scanné : ANSSI-BP-028 intermediary (référentiel français couvert par scap-security-guide). Le résultat du scan CIS niveau 1 (état final) figure dans docs/scores-openscap.md.
 - A.8.9 et A.8.19 sont des reformulations d'aide à l'audit, à confirmer avec la norme.
 
 ## Outils

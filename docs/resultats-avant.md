@@ -15,5 +15,5 @@
 
 Règles évaluées : 200 (87 pass + 113 fail)
 Conformité brute : 43,5 %
-Score OpenSCAP pondéré (rapport HTML) : à compléter
-Hardening index Lynis : à compléter
+Score OpenSCAP pondéré (champ score du XML) : 60,8
+Hardening index Lynis : 67

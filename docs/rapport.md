@@ -61,7 +61,7 @@ evidence/avant/, evidence/apres/, reports/, audit.sh, checks/, docs/.
 - La cible et le poste auditeur sont la même VM. Le scan externe vient d'une seconde VM Ubuntu.
 - Le compte auditeur dispose d'un sudo complet, alors que le cahier des charges prévoit une lecture et un diagnostic.
 - Le scan externe ne couvre que le TCP. L'UDP n'est connu que par ss (chronyd, en local).
-- Référentiel : le cahier des charges cite le CIS RHEL, le profil ANSSI-BP-028 a été scanné. Le scan CIS L1 est documenté dans docs/scores-openscap.md s'il a été exécuté.
+- Référentiel : le cahier des charges cite le CIS RHEL, le profil ANSSI-BP-028 a été scanné. Un scan CIS L1 a été exécuté sur l'état final : 184 pass / 91 fail (66,9 %), voir docs/scores-openscap.md.
 - A.8.19 : le cahier des charges rattache T-05 (correctifs) à A.8.19. La gestion des vulnérabilités relève plutôt de A.8.8 : à confirmer avec le texte de la norme.
 - Scores pondérés OpenSCAP : docs/scores-openscap.md. Index des preuves : docs/index-preuves.md.
 
@@ -99,3 +99,17 @@ ISO/IEC 27001:2022 (annexe A, A.8.9 et A.8.19), ISO 19011, ANSSI-BP-028, CIS Ben
 
 ## Scores pondérés
 Score pondéré OpenSCAP : 60,8 avant, 88,2 final (conformité brute : 43,5 % puis 90 %). Les deux mesures sont données car la pondération par sévérité réduit l'écart. Détail : docs/scores-openscap.md.
+
+## 13. Résultats CIS et classification finale
+Complément au résumé exécutif : le scan CIS niveau 1, référentiel cité par le cahier des charges, donne 184 pass / 91 fail / 20 non applicables sur l'état final (66,9 %), sans mesure à l'état initial. Le durcissement visait le profil ANSSI (90 %).
+
+| Question | ANSSI-BP-028 | CIS niveau 1 |
+|---|---|---|
+| G-01 conformité au profil | Non-conformité mineure | Non-conformité majeure |
+| G-03 services | Non-conformité mineure | Non-conformité mineure |
+| G-04 mots de passe | Conforme avec observation | Non-conformité mineure |
+| G-06 noyau | Conforme | Non-conformité mineure |
+
+Classifications proposées par l'auditeur : détail et justification dans docs/grille-audit.md et docs/constats.md (C-04, C-08). Le référentiel retenu est à valider avec l'enseignant.
+
+Recommandations prioritaires : AC-10 (retirer l'interface graphique), AC-06 à AC-08 (mots de passe, umask, su), puis AC-09 (SSH). Voir docs/plan-actions.md.

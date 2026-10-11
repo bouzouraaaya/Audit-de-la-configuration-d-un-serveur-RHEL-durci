@@ -37,3 +37,17 @@ Total : 20 écarts (3 en P1, 9 en P2, 8 en P3).
 | P3 | USB et FireWire, compilateurs, antivirus | USB-1000, STRG-1846, HRDN-7222, HRDN-7230 | Hors périmètre labo |
 | P3 | DNS, journalisation externe, outils | NETW-2705, NAME-4406, LOGG-2154, LOGG-2190, TOOL-5002, ACCT-9626, AUTH-9229, AUTH-9288, FILE-7524 | Environnement de labo |
 Priorités proposées par l'auditeur selon le critère impact / effort.
+
+## Consolidation CIS niveau 1 (91 écarts, source : evidence/apres/cis-l1-fail.txt)
+Priorités proposées par l'auditeur (impact / effort).
+| Priorité | Thème | Total | Action |
+|---|---|---|---|
+| P1 | Authentification (accounts, account, ensure, no, use) | 21 | AC-06, AC-07, AC-08 |
+| P1 | Interface graphique (dconf, gnome) | 11 | AC-10 |
+| P1 | Bannières et core dumps | 4 | Correction simple |
+| P2 | SSH | 11 | AC-09 |
+| P2 | Fichiers, montages, partition | 14 | À détailler |
+| P2 | Noyau (sysctl, kernel) | 12 | À détailler |
+| P2 | Services, pare-feu, sudo, journalisation, AIDE | 14 | À détailler |
+| P3 | Autres (grub2, package, disable, configure) | 4 | À détailler |
+Total : 91.

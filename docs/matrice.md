@@ -10,3 +10,10 @@ Profil scanné : ANSSI-BP-028 intermediary (à confirmer avec l'enseignant à la
 | A.8.19 | Système à jour ? | T-05 | EV-005 | 0 mise à jour de sécurité en attente, 33 autres | Conforme + observation |
 | A.8.9 ; CIS RHEL | Paramètres noyau appliqués ? | T-06 | EV-006 | rp_filter 1, ASLR 2, 11 options GRUB | Conforme |
 | A.8.9 | Écarts priorisés ? | T-07 | EV-007 | 3 P1, 9 P2, 8 P3 | Conforme |
+
+## Compléments après scan CIS
+| Test | Résultat CIS | Constat CIS |
+|---|---|---|
+| T-01 | 184 pass / 91 fail / 20 non applicables (66,9 %) | Non-conformité majeure |
+| T-04 | Expiration, historique et dictionnaire des mots de passe en échec | Non-conformité mineure |
+| T-06 | 12 écarts sysctl et kernel | Non-conformité mineure, à détailler |

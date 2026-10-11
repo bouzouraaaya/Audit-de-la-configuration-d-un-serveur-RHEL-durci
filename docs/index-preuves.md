@@ -7,7 +7,7 @@ Date = date du dernier commit du fichier. SHA-256 calculé sur la copie du dép�
 | EV-001 initial | evidence/avant/avant-anssi.html | 2026-10-05 | 4b65dc3a499bbdba5675bf3f303c5163d82742bffcce7b3f761834dcb8ac9d09 |
 | EV-001 final | evidence/apres/final-anssi.xml | 2026-10-09 | e1f9d6babce86ea2aadb6193fd6b98c2ac7b329c4a5612cfaea5d1114e5d1399 |
 | EV-001 final | evidence/apres/final-anssi.html | 2026-10-09 | 45b8621676f7bf1453593e435aa1a73c73169d23ebe27d36d72577ee1c068b90 |
-| EV-001 final CIS L1 (si exécuté) | evidence/apres/final-cis-l1.xml | - | FICHIER ABSENT |
+| EV-001 final CIS L1 (si exécuté) | evidence/apres/final-cis-l1.xml | non commité | 0e79d7a05f2b070fda764d18d96bebb0be78ea596077e8317f1102ee07d4a1ca |
 | EV-002 initial | evidence/avant/lynis-report.dat | 2026-10-05 | 470b5a63d3a8e99715379f4631ee288c2050d46adf09b88feb741bc85bf147a3 |
 | EV-002 initial | evidence/avant/lynis.log | 2026-10-05 | 072e42a1df196e5484c28862907d1f827db1a63d55839a6771c1ccfaecab7975 |
 | EV-002 final | evidence/apres/lynis-final-report.dat | 2026-10-09 | ce7d254d3a36fe7151cd816b90b22a3e2d695b12dc0bb3abc16f929a085b340a |
@@ -29,4 +29,6 @@ Date = date du dernier commit du fichier. SHA-256 calculé sur la copie du dép�
 | EV-005 | evidence/apres/EV-005-security.txt | 2026-10-09 | eaa3fbfc810ea38bc234a64649b3ce9baabe2f70acc9de69c379b79fc90816f8 |
 | EV-006 | evidence/apres/EV-006-cmdline.txt | 2026-10-09 | 8903cea3bb85fb4d12bc6d57d468cabc18de0f02d1515329d1fe916191a29c84 |
 | EV-006 | evidence/apres/EV-006-sysctl.txt | 2026-10-09 | e409c53f7da0387142818a0f33282069d45a38b3705353b8d8e4db6897e5456b |
-| EV-007 | docs/EV-007-ecarts-priorises.md | 2026-10-09 | 9578dac273389ef66afd77cd985880edede96c8c338f8afbd713cc4a40611730 |
+| EV-007 | docs/EV-007-ecarts-priorises.md | 2026-10-10 | 17212e752aaab2b082effad8626e7a32ef1d247e493bcd84cf9701537779fde4 |
+| EV-001 final CIS L1 | evidence/apres/final-cis-l1.html | non commité | c619b795297d635a3f20fb7a59e74118e4b66b0c57e270204c1c0cbdc87a4940 |
+| EV-001 final CIS L1 | evidence/apres/cis-l1-fail.txt | non commité | a5fca4458dbf627921f6e954ef0e2d253dfea643b06e985614eb40212b6c1eb6 |
