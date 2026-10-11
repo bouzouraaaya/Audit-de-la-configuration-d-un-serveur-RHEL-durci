@@ -32,3 +32,4 @@ Date = date du dernier commit du fichier. SHA-256 calculé sur la copie du dép�
 | EV-007 | docs/EV-007-ecarts-priorises.md | 2026-10-10 | 17212e752aaab2b082effad8626e7a32ef1d247e493bcd84cf9701537779fde4 |
 | EV-001 final CIS L1 | evidence/apres/final-cis-l1.html | non commité | c619b795297d635a3f20fb7a59e74118e4b66b0c57e270204c1c0cbdc87a4940 |
 | EV-001 final CIS L1 | evidence/apres/cis-l1-fail.txt | non commité | a5fca4458dbf627921f6e954ef0e2d253dfea643b06e985614eb40212b6c1eb6 |
+| EV-003 et EV-004 final (collecte) | evidence/apres/collecte-20261011-110633.txt | 2026-10-11 | 66bdd526845f5c80a45584655b0af085c568c71f68171c5fc8d07634d38acc8c |
